@@ -1,6 +1,9 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import HeaderIcon from './HeaderIcon.astro';
 import { SITE_TITLE } from '../consts';
+import linkedin from '/linkedin.svg';
+import github from '/github.svg';
 ---
 
 <header>
@@ -10,6 +13,8 @@ import { SITE_TITLE } from '../consts';
 	<nav>
 		<HeaderLink href="/blog">blog</HeaderLink>
 		<HeaderLink href="/about">about</HeaderLink>
+		<HeaderIcon href="https://www.linkedin.com/in/tedkim03"><img src={linkedin} alt="linkedin" /></HeaderIcon>
+		<HeaderIcon href="https://github.com/10ego"><img src={github} alt="github" /></HeaderIcon>
 	</nav>
 </header>
 <style>
